@@ -12,6 +12,7 @@ var router = require('express').Router();
   router.post('/send', (req, res) => {
     let msg = req.body.name;
     console.log('working ' + msg);
+    res.redirect('/contact');
   });
 
   router.get('*', (req, res)=>{

@@ -5,14 +5,22 @@ import { Link } from 'react-router-dom'
 // between routes.
 const Header = () => (
   <header>
-    <nav>
-      <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/schedule'>Schedule</Link></li>
-         <li><Link to='/contact'>Contact</Link></li>
-        <li><a href="/user">User</a></li>
-
-      </ul>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <Link class="navbar-brand" to='/'>Logo</Link>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+          <Link className="nav-link" to='/'>Home</Link>
+          </li>
+          <li class="nav-item">
+            <Link className="nav-link" to='/schedule'>Schedule</Link>
+          </li>
+          <li class="nav-item">
+            <Link className="nav-link" to='/contact'>Contact</Link>
+          </li>
+          <li class="nav-item">
+            <a className="nav-link" href='/user'>User</a>
+          </li>
+        </ul>
     </nav>
   </header>
 )
