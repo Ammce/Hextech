@@ -14,11 +14,7 @@ var router = require('express').Router();
     console.log('working ' + msg);
   });
 
-<<<<<<< HEAD
-  router.get('/*', (req, res)=>{
-=======
   router.get('*', (req, res)=>{
->>>>>>> Third commit
     res.render('index');
   });
 

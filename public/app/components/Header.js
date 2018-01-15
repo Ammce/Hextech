@@ -9,11 +9,7 @@ const Header = () => (
       <ul>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/schedule'>Schedule</Link></li>
-<<<<<<< HEAD
-        <li><Link to='/contact'>Contact</Link></li>
-=======
-         <li><Link to='/contact'>Contact</Link></li> 
->>>>>>> Third commit
+         <li><Link to='/contact'>Contact</Link></li>
         <li><a href="/user">User</a></li>
 
       </ul>
