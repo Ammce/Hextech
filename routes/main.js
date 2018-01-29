@@ -12,7 +12,8 @@ var router = require('express').Router();
   router.post('/send', (req, res) => {
     let msg = req.body.name;
     console.log('working ' + msg);
-    res.redirect('/contact');
+    res.json({greetings: "Hello it is workinggg"});
+
   });
 
   router.get('*', (req, res)=>{
